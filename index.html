@@ -1,69 +1,114 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人網站</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>個人網站</title>
     <style>
+        /* 基本樣式 */
         body {
-            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
             text-align: center;
         }
-        main {
+
+        header {
+            background-color: #333;
+            color: white;
             padding: 20px;
         }
-        .photo {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-            border-radius: 10px;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
-        .about {
-            margin-top: 20px;
-            line-height: 1.8;
+
+        /* 主要內容區域 */
+        .container {
+            padding: 30px;
         }
+
+        .photo-container {
+            margin-bottom: 30px;
+        }
+
+        .photo-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #333;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        /* PDF 連結樣式 */
+        .pdf-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pdf-list li {
+            margin: 10px 0;
+        }
+
+        .pdf-list a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .pdf-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* 頁腳 */
         footer {
             background-color: #333;
             color: white;
-            text-align: center;
             padding: 10px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>歡迎來到我的個人網站</h1>
-</header>
+    <!-- 頁首 -->
+    <header>
+        <h1>歡迎來到我的個人網站</h1>
+    </header>
 
-<main>
-    <section>
-        <h2>我的照片</h2>
-        <img src="your-photo.jpg" alt="我的照片" class="photo">
-    </section>
+    <!-- 主要內容區 -->
+    <div class="container">
 
-    <section class="about">
-        <h2>關於我</h2>
-        <p>嗨！我是小志，一名熱愛動物與大自然的動物園員。目前在台北市立動物園工作，主要負責照顧哺乳類與鳥類動物。每天能和各種可愛又獨特的生物相處，是我最幸福的事。</p>
-        <p>除了照顧牠們的飲食與健康，我也致力於推廣動物保育與環境教育，讓更多人了解野生動物面臨的挑戰。希望透過我的努力，能讓人與動物共生的世界更近一步！</p>
-    </section>
-</main>
+        <!-- 個人照片 -->
+        <div class="photo-container">
+            <img src="myphoto.jpg" alt="我的照片">
+        </div>
 
-<footer>
-    <p>&copy; 2025 小志的動物園日記. All rights reserved.</p>
-</footer>
+        <p>你好！我是 [你的名字]，這裡是我展示的一些作品。</p>
+
+        <!-- 作品區 -->
+        <div class="section-title">我的作品</div>
+        <ul class="pdf-list">
+            <li><a href="works/work1.pdf" target="_blank">作品 1</a></li>
+            <li><a href="works/work2.pdf" target="_blank">作品 2</a></li>
+            <li><a href="works/work3.pdf" target="_blank">作品 3</a></li>
+        </ul>
+    </div>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>© 2025 [你的名字] - 版權所有</p>
+    </footer>
 
 </body>
 </html>
